@@ -1,0 +1,120 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+}
+.parent-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/*.top {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  box-shadow: 0px 10px 20px black;
+  z-index: 999; 
+}*/
+.white {
+  display: flex;
+  height: 500px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.bg-white{
+box-shadow: inset 0px 0px 30px 20px white;
+}
+
+.black, .black2, .black3, .black4, .black5, .black6, .black7 {
+  position: absolute;
+  height: 300px;
+  width: 65px;
+  z-index: 99;
+  margin-top: -200px;
+  margin-left: 590px;
+  border: 1px solid black;
+  box-shadow: inset 0px 0px 10px 5px gray;
+  
+}
+
+.bg-dark{
+  background: linear-gradient(to bottom, gray 0%, black 100%);
+}
+
+.black:active {
+  background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+.black2 {
+  margin-left: -600px;
+}
+.black2:active {
+  background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+.black3 {
+ margin-left: -190px; 
+}
+.black3:active {
+  background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+.black4 {
+ margin-left: -5px; 
+}
+.black4:active {
+  background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+.black5 {
+ margin-left: 200px; 
+}
+.black5:active {
+  background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+.black6 {
+ margin-left: -800px; 
+}
+.black6:active {
+  background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+.black7 {
+ margin-left: 800px; 
+}
+.black7:active {
+  background: linear-gradient(to bottom, black 0%, gray 100%);
+}
+
+.green{
+  background-color: #3DBE29 !important;
+}
+.pink{
+  background-color: #E6425E !important;
+
+}
+.yellow{
+  background-color: #DDD101 !important;
+}
+
+.blue{
+  background-color:#12B0E8 !important;
+}
+
+
+.color1{
+    background-color: maroon;
+}
+.color2{
+    background-color:#FF9347;
+}
+.color3{
+    background-color:  #4C3AE3;
+}
+.color4{
+    background-color: #8D3DAF;
+}
