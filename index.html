@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+  var one = new Audio ();
+  var two = new Audio ();
+  var three = new Audio ();
+  var four = new Audio ();
+  var five = new Audio ();
+  var six = new Audio ();
+  var seven = new Audio ();
+  var eight = new Audio ();
+  var nine= new Audio ();
+  var ten = new Audio ();
+  var blackone = new Audio ();
+  var blacktwo = new Audio ();
+  var blackthree = new Audio ();
+  var blackfour = new Audio ();
+  var blackfive = new Audio ();
+  var blacksix = new Audio ();
+  var blackseven = new Audio ();
+
+  one.src = "notes/notes_C.mp3"
+  two.src = "notes/notes_D.mp3"
+  three.src = "notes/notes_E.mp3"
+  four.src = "notes/notes_F.mp3"
+  five.src = "notes/notes_G.mp3"
+  six.src = "notes/notes_A.mp3"
+  seven.src = "notes/notes_B.mp3" 
+  eight.src = "notes/notes_C.mp3"
+  nine.src = "notes/notes_D.mp3"
+  ten.src =  "notes/notes_E.mp3" 
+
+  blackone.src = "notes/notes_Db.mp3"
+  blacktwo.src = "notes/notes_Eb.mp3"
+  blackthree.src = "notes/notes_Gb.mp3"
+  blackfour.src = "notes/notes_Ab.mp3"
+  blackfive.src = "notes/notes_Bb.mp3"
+  blacksix.src = "notes/notes_Db.mp3"
+  blackseven.src = "notes/notes_Eb.mp3"
+
+  function changecolor(){
+
+    let selectedValue = document.getElementById("selectid");
+
+ 
+    let selectedColorId = selectedValue.value;
+
+    let buttonWhite = document.getElementsByClassName("white");
+    let buttonBlack = document.getElementsByClassName("dark");
+      
+    for(let btn of buttonWhite){
+      btn.classList.remove(btn.classList[1]);
+      btn.classList.add(selectedColorId);
+    }
+    
+  let arrColors = [
+    "color1",
+    "color2",
+    "color3",
+    "color4"
+  ];
+
+  let index =Math.floor(Math.random() * 4);
+
+  for(let btn1 of buttonBlack){
+    btn1.classList.remove(btn1.classList[2]);
+    console.log(btn1.classList);
+    btn1.classList.add(arrColors[index]);
+  }   
+  }
+
+  </script>
+</head>
+<body>
+  
+  <div class = "parent-div">
+    <div id="example-div"></div>
+
+   
+    <button class="white bg-white" onMouseDown="one.play ()"></button>
+	  <button class="white bg-white" onMouseDown="two.play ()"></button>
+    <button class="white bg-white" onMouseDown="three.play ()"></button>
+    <button class="white bg-white" onMouseDown="four.play ()"></button>
+    <button class="white bg-white" onMouseDown="five.play ()"></button>
+    <button class="white bg-white" onMouseDown="six.play ()"></button>
+    <button class="white bg-white" onMouseDown="seven.play ()"></button>
+    <button class="white bg-white" onMouseDown="eight.play ()"></button>
+    <button class="white bg-white" onMouseDown="nine.play ()"></button>
+    <button class="white bg-white" onMouseDown="ten.play ()"></button>
+
+    <button class="black dark bg-dark" onMouseDown="blackone.play ()"></button>
+    <button class="black2 dark bg-dark" onMouseDown="blacktwo.play ()"></button>
+    <button class="black3 dark bg-dark" onMouseDown="blackthree.play ()"></button>
+    <button class="black4 dark bg-dark" onMouseDown="blackfour.play ()"></button>
+    <button class="black5 dark bg-dark" onMouseDown="blackfive.play ()"></button>
+    <button class="black6 dark bg-dark" onMouseDown="blacksix.play ()"></button>
+    <button class="black7 dark bg-dark"  onMouseDown="blackseven.play ()"></button>
+  </div>
+    <div id='body'>
+      <br>
+      <br>
+      align: left;
+  <select id = "selectid">
+<option class="pink">pink</option>
+<option class="green">green</option>
+<option class="blue">blue</option>
+<option class= "yellow">yellow</option>
+</select>
+<input type="button" id = "colorbutton" value="change" onclick="changecolor()">
+   
+  
+</body>
+</html>
