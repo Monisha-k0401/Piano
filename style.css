@@ -10,7 +10,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .white {
   display: flex;
@@ -18,14 +17,10 @@ body {
   width: 100px;
   justify-content: center;
   align-items: center;
-  
 }
-
-
 .bg-white{
 box-shadow: inset 0px 0px 30px 20px white;
 }
-
 .black, .black2, .black3, .black4, .black5, .black6, .black7 {
   position: absolute;
   height: 300px;
@@ -35,13 +30,10 @@ box-shadow: inset 0px 0px 30px 20px white;
   margin-left: 590px;
   border: 1px solid black;
   box-shadow: inset 0px 0px 10px 5px gray;
-  
 }
-
 .bg-dark{
   background: linear-gradient(to bottom, gray 0%, black 100%);
 }
-
 .black:active {
   background: linear-gradient(to bottom, black 0%, gray 100%);
 }
@@ -87,16 +79,13 @@ box-shadow: inset 0px 0px 30px 20px white;
 }
 .pink{
   background-color: #E6425E !important;
-
 }
 .yellow{
   background-color: #DDD101 !important;
 }
-
 .blue{
   background-color:#12B0E8 !important;
 }
-
 
 .color1{
     background-color: maroon;
