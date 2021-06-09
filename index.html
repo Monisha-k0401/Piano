@@ -42,15 +42,11 @@
   blackseven.src = "notes/notes_Eb.mp3"
 
   function changecolor(){
-
     let selectedValue = document.getElementById("selectid");
-
- 
     let selectedColorId = selectedValue.value;
-
     let buttonWhite = document.getElementsByClassName("white");
     let buttonBlack = document.getElementsByClassName("dark");
-      
+     
     for(let btn of buttonWhite){
       btn.classList.remove(btn.classList[1]);
       btn.classList.add(selectedColorId);
@@ -71,17 +67,13 @@
     btn1.classList.add(arrColors[index]);
   }   
   }
-
-  </script>
+ </script>
 </head>
 <body>
-  
   <div class = "parent-div">
     <div id="example-div"></div>
-
-   
     <button class="white bg-white" onMouseDown="one.play ()"></button>
-	  <button class="white bg-white" onMouseDown="two.play ()"></button>
+    <button class="white bg-white" onMouseDown="two.play ()"></button>
     <button class="white bg-white" onMouseDown="three.play ()"></button>
     <button class="white bg-white" onMouseDown="four.play ()"></button>
     <button class="white bg-white" onMouseDown="five.play ()"></button>
@@ -110,7 +102,5 @@
 <option class= "yellow">yellow</option>
 </select>
 <input type="button" id = "colorbutton" value="change" onclick="changecolor()">
-   
-  
-</body>
+ </body>
 </html>
